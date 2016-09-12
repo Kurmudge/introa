@@ -1,0 +1,34 @@
+<script>
+   
+    var userName = prompt("Type your username here");
+    if (prompt("Type your username here") === userName)
+    {
+        console.log("Your username is correct please type in your password");
+    }
+    else
+    {
+        console.log("Your username is incorrect please try again");
+    }
+    
+    var passWord = prompt("Type your password here");
+    if (prompt("Type your password here") === passWord)
+    {
+        console.log("Your password is correct please procede to our website");
+    }
+    else
+    {
+        console.log("Your password is incorrect please try again");
+                    }
+    
+    var tweetMessage = prompt("Type your message here.");
+    var charactersLeft = (140 - tweetMessage.length);
+    if (tweetMessage.length > 140)
+    {
+        console.log("Your tweet - " + tweetMessage + "is" + charactersLeft + " over the limit. Please make it 140 or less characters.");
+    }
+    else
+    {
+    console.log("You have " + charactersLeft + " Characters left in your tweet - " + tweetMessage);
+    }
+    
+</script>
