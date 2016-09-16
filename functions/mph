@@ -1,0 +1,16 @@
+<script>
+    
+var gallonTest = function (miles) {
+var val = (miles / 12) + 10000
+   
+if ((miles / 12) <= 1)
+{
+ console.log("You went " + val + " miles. " + "Your miles per gallon is '" + miles / 12 + " mile per gallon.'");   
+}
+else
+{
+console.log("You went " + val + " miles. " + "Your miles per gallon is '" + miles / 12 + " miles per gallon.'");
+}
+} 
+gallonTest(prompt("How many miles did you go?")); 
+</script>
