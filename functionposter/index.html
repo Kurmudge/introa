@@ -1,0 +1,31 @@
+<script>
+    var carPrice = function(price){
+        //var val = (price * 0.0418) for 60-month
+        //var val = (price * 0.0415) for 48-month
+		var months = prompt("Have you leased your car for '60 months' or '48 months'?")
+    if (months ==="60 months")
+    {
+        var val = (price * 0.0418)
+        console.log("You will pay $" + val + " in intrest on your new car for your 60-month loan.");
+                    
+    }
+        else
+        {
+        if (months === "48 months")
+         			{
+                    var val = (price * 0.0415)
+					console.log("You will pay $" + val + " in intrest on your new car for your 48-month loan.");
+						
+                    }
+                    else 
+                    {
+                    console.log("You did not tell me if you have a '60 month' loan or a '48 month' loan or something else was wrong.");
+					}
+					
+        }
+        }
+
+carPrice(prompt("How Much Does Your Car Cost? (Your answer has to be in all numbers)"));
+    
+
+</script>
