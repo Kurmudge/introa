@@ -1,0 +1,64 @@
+body {
+	background: #FAFBF7;
+	background-size: 100% 100%;
+}
+#photoWrapper {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#thePhoto {
+	width: 100%;
+}
+#forwardBtn {
+	position: relative;
+	float: right;
+}
+#timerBtn {
+	position: relative;
+	float: center;
+}
+#clockbox{
+	right:0%;
+	left:0%;
+	
+}
+
+button {
+	background: #468263;
+	color: white;
+}
+.centerMe{
+	text-align: center;
+	font-family: 'Sansita One', cursive;
+	color: #731509;
+}
+
+p.centerme {
+}
+h1 {
+font-family: 'Sansita One', cursive;
+}
+.pageWrapper {
+	width: 70%;
+	margin-left: 15%;
+	padding: 20px 20px 20px 20px;
+	background-color: #C0C0B0;
+}
+#chart_div{
+	margin-left: 25%;
+	
+}
+#demo {
+	text-align: center;
+	font-family: 'Sansita One', cursive;
+	color: #731509;
+}
+#music{
+	margin: center;
+}
+#pun{
+text-align: center;
+	font-family: 'Bungee', cursive;
+	color: black;
+}
