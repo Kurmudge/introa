@@ -1,0 +1,97 @@
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css">
+	
+</head>
+<body>
+<div class="pageWrapper">
+<h1 class="centerMe">Happy Holidays!</h1>
+<div id="photoWrapper">
+	<img src="" id="thePhoto">
+	<button id="forwardBtn" type="button">Forward</button>
+<button id="backBtn" type="button">Back</button>
+<button id="timerBtn" onclick="setTimeout(myFunction, 3000);">Play Music</button>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+<div id="dateTime" ></div>
+ Display Date and Time.</button>
+
+
+</div>
+
+<p class="centerMe">Dear Mom, Hi Mom! Merry Christmas!</p>
+<p class="centerMe">Click "Play Music". Wait 3 seconds, and the page will play music.</p>
+<p id="demo"></p>
+<p class="centerMe">Here, you get pun. Hooray!</p>
+<div id="pun"></div>
+	<!-- Draw the chart here! -->
+	<div id="chart_div"></div>
+	
+</div>
+	 
+
+
+<!--Load the AJAX API-->
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src ="http://code.jquery.com/jquery-latest.min.js" typer= "text/javascript"></script>
+<script src="javascript.js" type="text/javascript"></script>
+
+
+<script> 
+function myFunction() {
+var audio = new audio('audio_file.mp3');
+   audio.play();
+}
+</script>
+
+<script type="text/javascript">
+var Quotation=new Array() 
+Quotation[0] = "Why don't some couples go to the gym? Because some relationships don't work out.";
+Quotation[1] = "I wasn't originally going to get a brain transplant, but then I changed my mind.";
+Quotation[2] = "Did you hear about the guy whose whole left side was cut off? He's all right now.";
+Quotation[3] = "I'd tell you a chemistry joke but I know I wouldn't get a reaction.";
+Quotation[4] = "I wondered why the baseball was getting bigger. Then it hit me.";
+Quotation[5] = "A friend of mine tried to annoy me with bird puns, but I soon realized that toucan play at that game.";
+Quotation[6] = "Did you hear about the guy who got hit in the head with a can of soda? He was lucky it was a soft drink.";
+Quotation[7] = "I'm reading a book about anti-gravity. It's impossible to put down.";
+Quotation[8] = "If there was someone selling drugs in this place, weed know.";
+Quotation[9] = "Have you ever tried to eat a clock? It's very time consuming.";
+Quotation[10] = "What is the difference between a nicely dressed man on a tricycle and a poorly dressed man on a bicycle? A tire.";
+Quotation[11] = "When notes get in treble, bass-ically they get put behind bars. The alto-nate punishment is to push them off a clef and hope they land flat on sharp objects.";
+Quotation[12] = "Why don't programmers like nature? It has too many bugs.";
+Quotation[13] = "I couldn't quite remember how to throw a boomerang, but eventually it came back to me.";
+Quotation[14] = "So what if I don't know what apocalypse means!? It's not the end of the world!";
+Quotation[15] = "The shoemaker did not deny his apprentice anything he needed. He gave his awl.";
+Quotation[16] = "When William joined the army he disliked the phrase 'fire at will'.";
+Quotation[17] = "The one who invented the door knocker got a No-bell prize.";
+Quotation[18] = "Claustrophobic people are more productive thinking outside the box.";
+Quotation[19] = "I don't trust these stairs because they're always up to something.";
+Quotation[20] = "I'm glad I know sign language, it's pretty handy.";
+Quotation[21] = "Need an ark to save two of every animal? I noah guy.";
+Quotation[22] = "A bicycle can't stand on its own because it is two-tired.";
+Quotation[23] = "Police were called to a daycare where a three-year-old was resisting a rest.";
+Quotation[24] = "My friend's bakery burned down last night. Now his business is toast.";
+Quotation[25] = "I once heard a joke about amnesia, but I forgot how it goes.";
+Quotation[26] = "When Peter Pan punches, they Neverland.";
+Quotation[27] = "The roundest knight at king Arthur's round table was Sir Cumference.";
+Quotation[28] = "There was once a cross-eyed teacher who couldn't control his pupils.";
+Quotation[29] = "A small boy swallowed some coins and was taken to a hospital. When his grandmother telephoned to ask how he was a nurse said 'No change yet'.";
+Quotation[30] = "To write with a broken pencil is pointless.";
+Quotation[31] = "The other day I held the door open for a clown. I thought it was a nice jester.";
+Quotation[32] = "I did a theatrical performance about puns. Really it was just a play on words.";
+
+
+var Q = Quotation.length;
+var whichQuotation=Math.round(Math.random()*(Q-1));
+function showQuotation(){
+document.getElementById("pun").innerHTML = Quotation[whichQuotation];
+}
+showQuotation();
+</script>
+
+</body>
+</html>
